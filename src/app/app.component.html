@@ -1,0 +1,5 @@
+
+<h1 class="center">Practice Time!</h1>
+<!-- Data is extracted using the calculate directive from the main-box component and directly enters the function for calculations  -->
+<app-main-box (calculate)="calculateInvestmentResults($event)"></app-main-box>
+<app-table [results]="resultsData"></app-table>

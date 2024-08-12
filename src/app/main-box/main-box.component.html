@@ -1,0 +1,27 @@
+<div class="form_wrapper">
+    <form (ngSubmit)="onSubmit()">
+        <div class="input_wrapper">
+            <div>
+                <div>
+                    <p>INITIAL INVESTMENT</p>
+                    <input type="number" name="InitialInvestment" [(ngModel)]="enteredInitialInvestment" min="0">
+                </div>
+                <div>
+                    <p>EXPECTED RETURN</p>
+                    <input type="number" name="ExpectedReturn" [(ngModel)]="enteredExpectedReturn" min="0">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>ANNUAL INVESTMENT</p>
+                    <input type="number" name="AnnualInvestment" [(ngModel)]="enteredAnnualInvestment" min="0">
+                </div>
+                <div>
+                    <p>DURATION</p>
+                    <input type="number" name="Duration" [(ngModel)]="enteredDuration" min="0">
+                </div>
+            </div>
+        </div>
+        <button>Calculate</button>
+    </form>
+</div>
